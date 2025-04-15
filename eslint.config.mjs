@@ -2,7 +2,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import eslintPluginReact from "eslint-plugin-react";
 import eslintPluginReactHooks from "eslint-plugin-react-hooks";
-import {fixupPluginRules} from "@eslint/compat";
+import { fixupPluginRules } from "@eslint/compat";
 import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 import eslintPluginImport from "eslint-plugin-import";
 import eslintPluginReactCompiler from "eslint-plugin-react-compiler";
@@ -22,9 +22,13 @@ export default [
     rules: {
       "padding-line-between-statements": [
         "warn",
-        {blankLine: "always", prev: "*", next: ["return", "export"]},
-        {blankLine: "always", prev: ["const", "let", "var"], next: "*"},
-        {blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"]},
+        { blankLine: "always", prev: "*", next: ["return", "export"] },
+        { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+        {
+          blankLine: "any",
+          prev: ["const", "let", "var"],
+          next: ["const", "let", "var"],
+        },
       ],
       "no-console": "warn",
     },
@@ -108,12 +112,12 @@ export default [
         "prettier/prettier": [
           "warn",
           {
-            printWidth: 100,
+            printWidth: 80,
             trailingComma: "all",
             tabWidth: 2,
             semi: true,
             singleQuote: false,
-            bracketSpacing: false,
+            bracketSpacing: true,
             arrowParens: "always",
             endOfLine: "auto",
             plugins: ["prettier-plugin-tailwindcss"],
@@ -167,7 +171,7 @@ export default [
       },
     },
     rules: {
-      ...eslintPluginNext.configs.recommended.rules,
+      // ...eslintPluginNext.configs.recommended.rules,
       ...vercelStyleGuideNext.rules,
       "@next/next/no-img-element": "off",
     },
