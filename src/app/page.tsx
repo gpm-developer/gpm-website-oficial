@@ -1,6 +1,8 @@
 export default function Home() {
   const asd = 1;
 
+  d;
+
   return (
     <div className="p-10 text-red-200">
       <p className="text-5xl text-red-500">GPM</p>
