@@ -1,5 +1,10 @@
+import {SmileIcon} from "lucide-react";
+
 import {GPMLogo} from "@/components/logos/gpm-logo";
 import {GPMLogotype} from "@/components/logos/gpm-logotype";
+import {FacebookIcon} from "@/components/icons/socials/facebook-icon";
+import {MailIcon} from "@/components/icons/socials/mail-icon";
+import {WhatsAppIcon} from "@/components/icons/socials/whatsapp-icon";
 
 export default function Home() {
   const GPM = "Grupo Pérez Moreno";
@@ -17,6 +22,26 @@ export default function Home() {
       <div className="bg-blue-100">
         <GPMLogotype height={36} />
       </div>
+      <div className="text-gpmBlue-700 text-2xl">
+        <SmileIcon />
+        <FacebookIcon />
+        <MailIcon />
+        <WhatsAppIcon />
+      </div>
+      <p className="text-gpmBlue-900">
+        Lorem ipsum dolor sit <span className="font-caslon italic">amet consectetur</span>,
+        adipisicing elit. Quas, quia incidunt. Temporibus sit amet illum cumque quae veniam
+        obcaecati quasi earum officia ullam itaque expedita recusandae labore est odio consequatur,
+        dolorum deserunt, autem harum optio? Debitis officiis quaerat laboriosam magni voluptatum
+        ipsam amet? Eaque numquam laborum quod eius. Recusandae, voluptatem?
+      </p>
+      <p className="text-gpmBlue-500">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, quia incidunt. Temporibus
+        sit amet illum cumque quae veniam obcaecati quasi earum officia ullam itaque expedita
+        recusandae labore est odio consequatur, dolorum deserunt, autem harum optio? Debitis
+        officiis quaerat laboriosam magni voluptatum ipsam amet? Eaque numquam laborum quod eius.
+        Recusandae, voluptatem?
+      </p>
 
       <div className="bg-layout-foreground border-layout-border my-10 rounded-md border p-6 shadow-sm">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia assumenda voluptates cumque
