@@ -1,12 +1,11 @@
 export default function Home() {
-  const TEST2 = "testing";
+  const GPM = "Grupo Pérez Moreno";
 
   return (
-    <div className="p-10 text-red-200">
-      <p className="text-5xl text-red-500">GPM</p>
-      <p className="font-caslon text-5xl italic text-blue-500">testing</p>
-      <p className="font-caslon text-5xl italic text-blue-500">{TEST2}</p>
-       main
+    <div className="p-10">
+      <h1 className="font-caslon text-5xl italic text-blue-700">{GPM}</h1>
+      <p className="mt-4 text-sm text-neutral-400">Página Oficial del Grupo Pérez Moreno</p>
+      <hr />
     </div>
   );
 }
