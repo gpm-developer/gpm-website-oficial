@@ -9,6 +9,11 @@ html {
 }
 @layer base {
   :root {
+    --custom-background: 0 0% 98%;
+    --custom-foreground: 0 0% 100%;
+    --custom-border: 0 0% 92%;
+    --custom-text: 0 0% 40%;
+
     /* #00004A */
     /* SOLID SCALE */
     --custom-blue-1: 210 100% 99%;
@@ -73,7 +78,7 @@ html {
     --custom-yellow-a11: 50 100% 28%;
     --custom-yellow-a12: 49 100% 7% 0.867;
 
-     /* UTILS */
+    /* UTILS */
     --custom-yellow-contrast: 50 63% 9%;
     --custom-yellow-surface: 51 100% 95% 0.8;
     --custom-yellow-indicator: 53 100% 50%;
@@ -113,5 +118,11 @@ html {
     --custom-gray-surface: 0 0% 100% 0.8;
     --custom-gray-indicator: 0 0% 55%;
     --custom-gray-track: 0 0% 55%;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-layout-text bg-layout-background;
   }
 }

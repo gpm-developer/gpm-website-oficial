@@ -5,17 +5,22 @@ export default function Home() {
   const GPM = "Grupo Pérez Moreno";
 
   return (
-    <div className="p-10">
+    <div className="p-4">
       <h1 className="font-caslon text-5xl italic text-blue-700">{GPM}</h1>
       <p className="mt-4 text-sm text-neutral-400">Página Oficial del Grupo Pérez Moreno</p>
       <p className="text-gpmBlue-900/50 font-black">TESTING COLORS</p>
-      <p className="text-gpmYellow">TESTING COLORS</p>
+      <p className="text-gpmYellow-700">TESTING COLORS</p>
       <hr />
       <div className="bg-red-100">
         <GPMLogo height={300} />
       </div>
       <div className="bg-blue-100">
         <GPMLogotype height={36} />
+      </div>
+
+      <div className="bg-layout-foreground border-layout-border my-10 rounded-md border p-6 shadow-sm">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia assumenda voluptates cumque
+        blanditiis vero optio cupiditate magni odit debitis neque!
       </div>
       <div>
         BLUE

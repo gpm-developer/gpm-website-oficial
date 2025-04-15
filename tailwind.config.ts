@@ -18,6 +18,12 @@ const config: Config = {
         caslonDisplay: "var(--font-caslon-display)",
       },
       colors: {
+        layout: {
+          background: "hsl(var(--custom-background) / <alpha-value>)",
+          foreground: "hsl(var(--custom-foreground) / <alpha-value>)",
+          border: "hsl(var(--custom-border) / <alpha-value>)",
+          text: "hsl(var(--custom-text) / <alpha-value>)",
+        },
         gpmYellow: {
           100: "hsl(var(--custom-yellow-1) / <alpha-value>)",
           200: "hsl(var(--custom-yellow-2) / <alpha-value>)",
