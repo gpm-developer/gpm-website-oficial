@@ -1,5 +1,5 @@
 export default function Home() {
-  const TEST = 1;
+  const TEST2 = 1;
 
   return (
     <div className="p-10 text-red-200">
