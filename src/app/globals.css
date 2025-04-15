@@ -1,3 +1,117 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  min-width: 0;
+}
+html {
+  scrollbar-gutter: stable;
+}
+@layer base {
+  :root {
+    /* #00004A */
+    /* SOLID SCALE */
+    --custom-blue-1: 210 100% 99%;
+    --custom-blue-2: 207 100% 98%;
+    --custom-blue-3: 215 100% 95%;
+    --custom-blue-4: 213 100% 92%;
+    --custom-blue-5: 214 100% 90%;
+    --custom-blue-6: 216 100% 87%;
+    --custom-blue-7: 217 100% 83%;
+    --custom-blue-8: 218 100% 76%;
+    --custom-blue-9: 240 100% 15%;
+    --custom-blue-10: 224 86% 22%;
+    --custom-blue-11: 222 62% 48%;
+    --custom-blue-12: 224 92% 20%;
+
+    /* ALPHA SCALE */
+    --custom-blue-a1: 210 100% 50% 0.016;
+    --custom-blue-a2: 207 100% 50% 0.043;
+    --custom-blue-a3: 215 100% 50% 0.094;
+    --custom-blue-a4: 213 100% 50% 0.157;
+    --custom-blue-a5: 214 100% 50% 0.208;
+    --custom-blue-a6: 216 100% 50% 0.263;
+    --custom-blue-a7: 217 100% 50% 0.349;
+    --custom-blue-a8: 219 100% 50% 0.478;
+    --custom-blue-a9: 240 100% 15%;
+    --custom-blue-a10: 224 100% 20% 0.969;
+    --custom-blue-a11: 222 100% 37% 0.82;
+    --custom-blue-a12: 225 100% 19% 0.984;
+
+    /* UTILS */
+    --custom-blue-contrast: 0 0% 100%;
+    --custom-blue-surface: 206 100% 97% 0.8;
+    --custom-blue-indicator: 240 100% 15%;
+    --custom-blue-track: 240 100% 15%;
+
+    /* #F8D732 */
+    /* SOLID SCALE*/
+    --custom-yellow-1: 60 43% 99%;
+    --custom-yellow-2: 51 100% 96%;
+    --custom-yellow-3: 53 100% 87%;
+    --custom-yellow-4: 51 100% 80%;
+    --custom-yellow-5: 49 100% 74%;
+    --custom-yellow-6: 49 79% 69%;
+    --custom-yellow-7: 49 62% 65%;
+    --custom-yellow-8: 49 55% 53%;
+    --custom-yellow-9: 53 100% 50%;
+    --custom-yellow-10: 50 93% 59%;
+    --custom-yellow-11: 50 100% 28%;
+    --custom-yellow-12: 49 32% 20%;
+
+    /* ALPHA SCALE*/
+    --custom-yellow-a1: 60 100% 30% 0.02;
+    --custom-yellow-a2: 52 100% 50% 0.082;
+    --custom-yellow-a3: 53 100% 50% 0.263;
+    --custom-yellow-a4: 51 100% 50% 0.396;
+    --custom-yellow-a5: 49 100% 50% 0.522;
+    --custom-yellow-a6: 49 100% 44% 0.549;
+    --custom-yellow-a7: 49 100% 38% 0.565;
+    --custom-yellow-a8: 49 100% 36% 0.725;
+    --custom-yellow-a9: 53 100% 50%;
+    --custom-yellow-a10: 50 100% 48% 0.8;
+    --custom-yellow-a11: 50 100% 28%;
+    --custom-yellow-a12: 49 100% 7% 0.867;
+
+     /* UTILS */
+    --custom-yellow-contrast: 50 63% 9%;
+    --custom-yellow-surface: 51 100% 95% 0.8;
+    --custom-yellow-indicator: 53 100% 50%;
+    --custom-yellow-track: 53 100% 50%;
+
+    /* #D4D4D4 */
+    /* SOLID SCALE */
+    --custom-gray-1: 0 0% 99%;
+    --custom-gray-2: 0 0% 98%;
+    --custom-gray-3: 0 0% 94%;
+    --custom-gray-4: 0 0% 91%;
+    --custom-gray-5: 0 0% 88%;
+    --custom-gray-6: 0 0% 85%;
+    --custom-gray-7: 0 0% 81%;
+    --custom-gray-8: 0 0% 73%;
+    --custom-gray-9: 0 0% 55%;
+    --custom-gray-10: 0 0% 51%;
+    --custom-gray-11: 0 0% 39%;
+    --custom-gray-12: 0 0% 13%;
+
+    /* ALPHA SCALE */
+    --custom-gray-a1: 0 0% 0% 0.012;
+    --custom-gray-a2: 0 0% 0% 0.024;
+    --custom-gray-a3: 0 0% 0% 0.063;
+    --custom-gray-a4: 0 0% 0% 0.09;
+    --custom-gray-a5: 0 0% 0% 0.122;
+    --custom-gray-a6: 0 0% 0% 0.153;
+    --custom-gray-a7: 0 0% 0% 0.192;
+    --custom-gray-a8: 0 0% 0% 0.267;
+    --custom-gray-a9: 0 0% 0% 0.447;
+    --custom-gray-a10: 0 0% 0% 0.486;
+    --custom-gray-a11: 0 0% 0% 0.608;
+    --custom-gray-a12: 0 0% 0% 0.875;
+
+    /* UTILS */
+    --custom-gray-contrast: 0 0% 100%;
+    --custom-gray-surface: 0 0% 100% 0.8;
+    --custom-gray-indicator: 0 0% 55%;
+    --custom-gray-track: 0 0% 55%;
+  }
+}

@@ -36,7 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} ${caslon.variable} ${caslonDisplay.variable}`}>
+      <body
+        className={`${manrope.className} ${caslon.variable} ${caslonDisplay.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

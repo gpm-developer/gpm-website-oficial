@@ -13,9 +13,35 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ["var(--font-manrope)"],
-        caslon: ["var(--font-caslon)"],
-        caslonDisplay: ["var(--font-caslon-display)"],
+        manrope: "var(--font-manrope)",
+        caslon: "var(--font-caslon)",
+        caslonDisplay: "var(--font-caslon-display)",
+      },
+      colors: {
+        gpmYellow: {
+          100: "hsl(var(--custom-yellow-1) / <alpha-value>)",
+          200: "hsl(var(--custom-yellow-2) / <alpha-value>)",
+          300: "hsl(var(--custom-yellow-3) / <alpha-value>)",
+          400: "hsl(var(--custom-yellow-4) / <alpha-value>)",
+          500: "hsl(var(--custom-yellow-5) / <alpha-value>)",
+          600: "hsl(var(--custom-yellow-6) / <alpha-value>)",
+          700: "hsl(var(--custom-yellow-7) / <alpha-value>)",
+          800: "hsl(var(--custom-yellow-8) / <alpha-value>)",
+          900: "hsl(var(--custom-yellow-9) / <alpha-value>)",
+          950: "hsl(var(--custom-yellow-10) / <alpha-value>)",
+        },
+        gpmBlue: {
+          100: "hsl(var(--custom-blue-1) / <alpha-value>)",
+          200: "hsl(var(--custom-blue-2) / <alpha-value>)",
+          300: "hsl(var(--custom-blue-3) / <alpha-value>)",
+          400: "hsl(var(--custom-blue-4) / <alpha-value>)",
+          500: "hsl(var(--custom-blue-5) / <alpha-value>)",
+          600: "hsl(var(--custom-blue-6) / <alpha-value>)",
+          700: "hsl(var(--custom-blue-7) / <alpha-value>)",
+          800: "hsl(var(--custom-blue-8) / <alpha-value>)",
+          900: "hsl(var(--custom-blue-9) / <alpha-value>)",
+          950: "hsl(var(--custom-blue-10) / <alpha-value>)",
+        },
       },
       keyframes: {
         // Radix Navigator Keyframes

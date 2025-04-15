@@ -5,7 +5,35 @@ export default function Home() {
     <div className="p-10">
       <h1 className="font-caslon text-5xl italic text-blue-700">{GPM}</h1>
       <p className="mt-4 text-sm text-neutral-400">Página Oficial del Grupo Pérez Moreno</p>
+      <p className="text-gpmBlue-900/50 font-black">TESTING COLORS</p>
+      <p className="text-gpmYellow">TESTING COLORS</p>
       <hr />
+      <div>
+        BLUE
+        <div className="bg-gpmBlue-100 p-5">100</div>
+        <div className="bg-gpmBlue-200 p-5">200</div>
+        <div className="bg-gpmBlue-300 p-5">300</div>
+        <div className="bg-gpmBlue-400 p-5">400</div>
+        <div className="bg-gpmBlue-500 p-5">500</div>
+        <div className="bg-gpmBlue-600 p-5">600</div>
+        <div className="bg-gpmBlue-700 p-5">700</div>
+        <div className="bg-gpmBlue-800 p-5">800</div>
+        <div className="bg-gpmBlue-900 p-5">900</div>
+        <div className="bg-gpmBlue-950 p-5">950</div>
+      </div>
+      <div>
+        BLUE
+        <div className="bg-gpmYellow-100 p-5">100</div>
+        <div className="bg-gpmYellow-200 p-5">200</div>
+        <div className="bg-gpmYellow-300 p-5">300</div>
+        <div className="bg-gpmYellow-400 p-5">400</div>
+        <div className="bg-gpmYellow-500 p-5">500</div>
+        <div className="bg-gpmYellow-600 p-5">600</div>
+        <div className="bg-gpmYellow-700 p-5">700</div>
+        <div className="bg-gpmYellow-800 p-5">800</div>
+        <div className="bg-gpmYellow-900 p-5">900</div>
+        <div className="bg-gpmYellow-950 p-5">950</div>
+      </div>
     </div>
   );
 }
