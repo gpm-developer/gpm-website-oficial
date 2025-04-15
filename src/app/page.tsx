@@ -1,3 +1,6 @@
+import {GPMLogo} from "@/components/logos/gpm-logo";
+import {GPMLogotype} from "@/components/logos/gpm-logotype";
+
 export default function Home() {
   const GPM = "Grupo Pérez Moreno";
 
@@ -8,6 +11,12 @@ export default function Home() {
       <p className="text-gpmBlue-900/50 font-black">TESTING COLORS</p>
       <p className="text-gpmYellow">TESTING COLORS</p>
       <hr />
+      <div className="bg-red-100">
+        <GPMLogo height={300} />
+      </div>
+      <div className="bg-blue-100">
+        <GPMLogotype height={36} />
+      </div>
       <div>
         BLUE
         <div className="bg-gpmBlue-100 p-5">100</div>
@@ -33,6 +42,19 @@ export default function Home() {
         <div className="bg-gpmYellow-800 p-5">800</div>
         <div className="bg-gpmYellow-900 p-5">900</div>
         <div className="bg-gpmYellow-950 p-5">950</div>
+      </div>
+      <div>
+        GRAY
+        <div className="bg-cGray-100 p-5">100</div>
+        <div className="bg-cGray-200 p-5">200</div>
+        <div className="bg-cGray-300 p-5">300</div>
+        <div className="bg-cGray-400 p-5">400</div>
+        <div className="bg-cGray-500 p-5">500</div>
+        <div className="bg-cGray-600 p-5">600</div>
+        <div className="bg-cGray-700 p-5">700</div>
+        <div className="bg-cGray-800 p-5">800</div>
+        <div className="bg-cGray-900 p-5">900</div>
+        <div className="bg-cGray-950 p-5">950</div>
       </div>
     </div>
   );

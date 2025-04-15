@@ -42,6 +42,18 @@ const config: Config = {
           900: "hsl(var(--custom-blue-9) / <alpha-value>)",
           950: "hsl(var(--custom-blue-10) / <alpha-value>)",
         },
+        cGray: {
+          100: "hsl(var(--custom-gray-1) / <alpha-value>)",
+          200: "hsl(var(--custom-gray-2) / <alpha-value>)",
+          300: "hsl(var(--custom-gray-3) / <alpha-value>)",
+          400: "hsl(var(--custom-gray-4) / <alpha-value>)",
+          500: "hsl(var(--custom-gray-5) / <alpha-value>)",
+          600: "hsl(var(--custom-gray-6) / <alpha-value>)",
+          700: "hsl(var(--custom-gray-7) / <alpha-value>)",
+          800: "hsl(var(--custom-gray-8) / <alpha-value>)",
+          900: "hsl(var(--custom-gray-9) / <alpha-value>)",
+          950: "hsl(var(--custom-gray-10) / <alpha-value>)",
+        },
       },
       keyframes: {
         // Radix Navigator Keyframes
