@@ -158,6 +158,7 @@ export default [
   {
     plugins: {
       next: fixupPluginRules(eslintPluginNext),
+      "@next/next": eslintPluginNext,
     },
     languageOptions: {
       globals: {
@@ -166,6 +167,7 @@ export default [
       },
     },
     rules: {
+      ...eslintPluginNext.configs.recommended.rules,
       ...vercelStyleGuideNext.rules,
       "@next/next/no-img-element": "off",
     },
