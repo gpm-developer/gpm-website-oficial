@@ -1,4 +1,4 @@
-import type {NextConfig} from "next";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -6,6 +6,22 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "general.gpmdevelopment.xyz",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "dummyimage.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

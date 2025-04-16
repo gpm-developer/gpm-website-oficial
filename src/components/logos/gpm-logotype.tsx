@@ -1,14 +1,19 @@
-import {SVGProps} from "react";
+import { SVGProps } from "react";
 
-import {gpmColors} from "@/lib/constants/gpm-colors";
+import { gpmColors } from "@/lib/constants/gpm-colors";
 
 type Props = {
   logotypeColor?: keyof typeof gpmColors;
 } & SVGProps<SVGSVGElement>;
 
-export function GPMLogotype({logotypeColor = "blue", ...props}: Props) {
+export function GPMLogotype({ logotypeColor = "blue", ...props }: Props) {
   return (
-    <svg version="1.1" viewBox="0 0 841.9 192" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      version="1.1"
+      viewBox="0 0 841.9 192"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <path
         d="M136.3,93.4l-57.8-57.8c-1.7-1.7-4.8-1.7-6.5,0L14.2,93.4c-.9.9-1.4,2-1.4,3.3s.5,2.4,1.4,3.3l57.8,57.8c.9.9,2,1.4,3.3,1.4s2.4-.5,3.3-1.4l57.8-57.8c.9-.9,1.4-2,1.4-3.3,0-1.2-.5-2.4-1.4-3.3ZM126.5,96.6l-51.2,51.2-51.2-51.2,51.2-51.2,51.2,51.2Z"
         fill={gpmColors.yellow}
