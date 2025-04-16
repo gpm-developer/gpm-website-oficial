@@ -4,6 +4,8 @@ import {
   Manrope,
 } from "next/font/google";
 
+import { Header } from "./header";
+
 import { cn } from "@/utils/common/cn";
 
 type Props = {
@@ -50,10 +52,6 @@ function BaseLayout({ children }: Props) {
 }
 
 export default BaseLayout;
-
-function Header() {
-  return <header>header</header>;
-}
 
 function Footer() {
   return <header>header</header>;
