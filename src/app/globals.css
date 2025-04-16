@@ -84,40 +84,40 @@ html {
     --custom-yellow-indicator: 53 100% 50%;
     --custom-yellow-track: 53 100% 50%;
 
-    /* #D4D4D4 */
+    /* #D1D5DB */
     /* SOLID SCALE */
-    --custom-gray-1: 0 0% 99%;
-    --custom-gray-2: 0 0% 98%;
-    --custom-gray-3: 0 0% 94%;
-    --custom-gray-4: 0 0% 91%;
-    --custom-gray-5: 0 0% 88%;
-    --custom-gray-6: 0 0% 85%;
-    --custom-gray-7: 0 0% 81%;
-    --custom-gray-8: 0 0% 73%;
-    --custom-gray-9: 0 0% 55%;
-    --custom-gray-10: 0 0% 51%;
-    --custom-gray-11: 0 0% 39%;
-    --custom-gray-12: 0 0% 13%;
+    --custom-gray-1: 210 33% 99%;
+    --custom-gray-2: 220 27% 98%;
+    --custom-gray-3: 216 17% 94%;
+    --custom-gray-4: 214 16% 91%;
+    --custom-gray-5: 218 14% 89%;
+    --custom-gray-6: 216 14% 85%;
+    --custom-gray-7: 215 13% 82%;
+    --custom-gray-8: 219 11% 74%;
+    --custom-gray-9: 214 6% 56%;
+    --custom-gray-10: 217 5% 52%;
+    --custom-gray-11: 217 6% 40%;
+    --custom-gray-12: 218 12% 13%;
 
     /* ALPHA SCALE */
-    --custom-gray-a1: 0 0% 0% 0.012;
-    --custom-gray-a2: 0 0% 0% 0.024;
-    --custom-gray-a3: 0 0% 0% 0.063;
-    --custom-gray-a4: 0 0% 0% 0.09;
-    --custom-gray-a5: 0 0% 0% 0.122;
-    --custom-gray-a6: 0 0% 0% 0.153;
-    --custom-gray-a7: 0 0% 0% 0.192;
-    --custom-gray-a8: 0 0% 0% 0.267;
-    --custom-gray-a9: 0 0% 0% 0.447;
-    --custom-gray-a10: 0 0% 0% 0.486;
-    --custom-gray-a11: 0 0% 0% 0.608;
-    --custom-gray-a12: 0 0% 0% 0.875;
+    --custom-gray-a1: 210 100% 25% 0.016;
+    --custom-gray-a2: 220 100% 22% 0.027;
+    --custom-gray-a3: 216 100% 15% 0.067;
+    --custom-gray-a4: 214 100% 14% 0.102;
+    --custom-gray-a5: 217 100% 12% 0.129;
+    --custom-gray-a6: 215 100% 12% 0.165;
+    --custom-gray-a7: 214 100% 11% 0.208;
+    --custom-gray-a8: 218 100% 10% 0.286;
+    --custom-gray-a9: 214 100% 6% 0.467;
+    --custom-gray-a10: 217 100% 5% 0.506;
+    --custom-gray-a11: 217 100% 4% 0.627;
+    --custom-gray-a12: 220 100% 2% 0.886;
 
     /* UTILS */
     --custom-gray-contrast: 0 0% 100%;
     --custom-gray-surface: 0 0% 100% 0.8;
-    --custom-gray-indicator: 0 0% 55%;
-    --custom-gray-track: 0 0% 55%;
+    --custom-gray-indicator: 214 6% 56%;
+    --custom-gray-track: 214 6% 56%;
   }
 }
 

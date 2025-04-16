@@ -5,6 +5,7 @@ import {
 } from "next/font/google";
 
 import { Header } from "./header";
+import { Footer } from "./footer";
 
 import { cn } from "@/utils/common/cn";
 
@@ -52,7 +53,3 @@ function BaseLayout({ children }: Props) {
 }
 
 export default BaseLayout;
-
-function Footer() {
-  return <header>header</header>;
-}

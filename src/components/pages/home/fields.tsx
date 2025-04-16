@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { SectionContainer } from "@/components/layout/section-container";
 
@@ -10,7 +12,7 @@ export const fields = [
       "Especializada en obras civiles y edificación, destacando movimientos de tierras, urbanizaciones, viales, obras hidráulicas, industriales.",
     company: "Pérez Moreno S.A.U.",
     image: "https://general.gpmdevelopment.xyz/perez-moreno.webp",
-    fieldLogo: "/logos/pérez-moreno.svg",
+    fieldLogo: "/logos/company/pérez-moreno.svg",
     href: "/negocios/construccion",
   },
   {
@@ -20,7 +22,7 @@ export const fields = [
     company: "Relaxia Resorts, S.L.U.",
     image: "https://general.gpmdevelopment.xyz/relaxia-x.webp",
 
-    fieldLogo: "/logos/relaxia.svg",
+    fieldLogo: "/logos/company/relaxia.svg",
     href: "/negocios/turismo",
   },
   {
@@ -30,7 +32,7 @@ export const fields = [
     company: "Solinca S.A.U.",
     image: "https://general.gpmdevelopment.xyz/perez-moreno-z.webp",
 
-    fieldLogo: "/logos/solinca.svg",
+    fieldLogo: "/logos/company/solinca.svg",
     href: "/negocios/promocion-inmobiliaria",
   },
   {
@@ -39,7 +41,7 @@ export const fields = [
       "Especializada en jardinería, zonas verdes, limpieza viaria, residuos, energías renovables y economía circular.",
     image: "https://general.gpmdevelopment.xyz/ayagaures-medioambiente-s.webp",
     company: "Ayagaures Medioambiente S.A.U.",
-    fieldLogo: "/logos/ayagaures-medioambiente.svg",
+    fieldLogo: "/logos/company/ayagaures-medioambiente.svg",
     href: "/negocios/medioambiente",
   },
 ];
@@ -95,6 +97,27 @@ export const ods = [
     href: "https://www.un.org/sustainabledevelopment/es/biodiversity/",
   },
 ];
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.075 * index,
+      duration: 0.25,
+    },
+  }),
+  hover: {
+    scale: 1.05,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
 
 export function Fields() {
   return (
@@ -152,8 +175,17 @@ function FieldsList() {
 function OdsList() {
   return (
     <ul className="mt-3 grid w-full grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-3">
-      {ods.map((ods, _) => (
-        <li key={ods.id} className="overflow-hidden rounded-md">
+      {ods.map((ods, index) => (
+        <motion.li
+          key={ods.id}
+          className="overflow-hidden rounded-md"
+          custom={index}
+          initial="initial"
+          variants={fadeInAnimationVariants}
+          viewport={{ once: true }}
+          whileHover="hover"
+          whileInView="animate"
+        >
           <a href={ods.href} rel="noreferrer" target="_blank">
             <Image
               alt={`${ods.id} - ${ods.description}`}
@@ -162,7 +194,7 @@ function OdsList() {
               width={300}
             />
           </a>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BookOpen, Handshake, Leaf, Scale } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { SectionContainer } from "@/components/layout/section-container";
 import BentoBlock from "@/components/bento-block";
@@ -173,17 +174,23 @@ function ImageBlock({
   currentImage: string;
 }) {
   return (
-    <div
-      key={currentImage}
-      className="relative col-span-12 row-span-3 hidden overflow-hidden rounded-md border border-layout-border bg-layout-foreground p-0 shadow-sm lg:col-span-3 lg:block"
-    >
-      <Image
-        fill
-        alt={imageBlock.alt}
-        className="absolute h-full w-full object-cover"
-        sizes="(min-width: 768px) 25vw, 100vw"
-        src={currentImage !== "default" ? currentImage : defaultImage}
-      />
-    </div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentImage}
+        animate={{ opacity: 1 }}
+        className="relative col-span-12 row-span-3 hidden overflow-hidden rounded-md border border-layout-border bg-layout-foreground p-0 shadow-sm lg:col-span-3 lg:block"
+        exit={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.25 }}
+      >
+        <Image
+          fill
+          alt={imageBlock.alt}
+          className="absolute h-full w-full object-cover"
+          sizes="(min-width: 768px) 25vw, 100vw"
+          src={currentImage !== "default" ? currentImage : defaultImage}
+        />
+      </motion.div>
+    </AnimatePresence>
   );
 }

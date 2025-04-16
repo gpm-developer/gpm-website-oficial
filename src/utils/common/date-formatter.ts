@@ -11,7 +11,7 @@ export function dateFormatter(
     weekday: "long",
   };
 
-  const formatOptions = {...defaultOptions, ...options};
+  const formatOptions = { ...defaultOptions, ...options };
 
   return date.toLocaleDateString("es-ES", formatOptions);
 }
